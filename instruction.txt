@@ -1,0 +1,38 @@
+#create Laravel project folder
+composer create-project --prefer-dist laravel/laravel projectName 5.2.29
+
+#list route
+php artisan route:list
+
+#create controller without action
+php artisan make:controller PostController
+
+#Create controller with actions
+php artisan make:controller --resources PostController
+
+#check commands in laravel
+php arisan
+
+#run laravel migration
+php artisan migration
+
+#create laravel migration from scratch
+php artisan make:migration create_post_table --create = "post"
+
+#delete last created table
+php artisan migrate:rollback
+
+#reset all laravel migration 
+php artisan migrate:reset
+
+#remove migrations and add thesm again(Refresh)
+php artisan migrate:refresh
+
+#laravel migration status
+php artisan migrate:status
+
+#create model
+php artisan make:model Post
+
+#create column in table using migration
+php artisan make:migration add_deleted_column_to_post_tables --table=
